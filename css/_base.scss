@@ -1,0 +1,37 @@
+html {
+  font-size: 100%;
+}
+@media (max-width: 390px) {
+  html {
+    font-size: 4.1025641026vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.28vw;
+  }
+}
+@media (min-width: 1250px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  a,
+  button {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  a:hover,
+  button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+

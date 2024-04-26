@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/******************************
+header.scss
+******************************/
+.p-header {
+  background-color: #0f1e56;
+  height: 4.375rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header {
+    height: 5.625rem;
+  }
+}
+.p-header__inner {
+  height: inherit;
+  padding-left: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__inner {
+    padding-right: 2.5rem;
+  }
+}
+.p-header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: inherit;
+}
+
+.p-header__logo {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: inherit;
+}
+
+.p-header__logo h1 {
+  height: inherit;
+}
+
+.p-header__logo h1 a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #fff;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.p-header__hamburger {
+  height: inherit;
+  background-color: #fff;
+  margin-left: auto;
+  width: 4.375rem;
+  padding: 0.625rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__hamburger {
+    display: none;
+  }
+}
+.p-header__nav {
+  display: none;
+  position: absolute;
+  top: 4.375rem;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__nav {
+    margin-left: auto;
+    padding-left: 1.25rem;
+    height: inherit;
+    display: block !important;
+    position: static;
+    position: initial;
+    width: auto;
+    background: none;
+  }
+}
+/*****************************
+* A Modern CSS Reset (https://github.com/hankchizljaw/modern-css-reset)
+* 上記に、ul要素,ol要素,a要素への記述追加
+*****************************/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+li {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  background-color: initial;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}/*# sourceMappingURL=style.css.map */
