@@ -1,0 +1,452 @@
+@charset "UTF-8";
+/******************************
+base.scss
+******************************/
+html {
+  background-color: #dfc4aa;
+}
+
+body {
+  font-family: "Kaisei Opti", serif;
+  font-weight: 700;
+  font-style: normal;
+  overflow-x: hidden;
+  width: 100%;
+  color: #543200;
+  margin: auto;
+  max-width: 1100px;
+}
+body a {
+  color: #543200;
+}
+
+/******************************
+header.scss
+******************************/
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: solid 5px #814D00;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5vh 2vw 0;
+}
+
+.x_logo {
+  padding-top: 0.5vh;
+}
+
+/******************************
+main.scss
+******************************/
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  background-color: #e6e3f1;
+  box-shadow: 0 0 10px #7a5216;
+}
+
+#contents {
+  display: flex;
+  flex-direction: column;
+  row-gap: min(6vh, 50px);
+  padding-bottom: 120px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1em;
+  padding-bottom: 5vh;
+}
+
+.mv {
+  max-width: 1000px;
+  width: 100%;
+  padding: 0;
+  border: solid 5px #814D00;
+  border-image: linear-gradient(150deg, #814D00 10%, #FBBF66 50%, #814D00 60%, #FBBF66 90%) 1;
+  margin: auto;
+  margin-top: 5vh;
+  box-shadow: 0 0 10px #7a5216;
+  background: url(../images/space_mv.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  aspect-ratio: 50/17;
+}
+@media screen and (max-width: 425px) {
+  .mv {
+    background: url(../images/space_mv.jpg) no-repeat;
+    background-size: cover;
+    background-position: 80%;
+    width: 95%;
+  }
+}
+.mv h1 {
+  word-break: keep-all;
+  font-size: min(7vw, 40px);
+  line-height: 1.5em;
+  padding-right: 5em;
+}
+.mv .text_area {
+  padding-top: min(1vw, 40px);
+  padding-left: min(2vw, 70px);
+  background-color: "#dbdbdb";
+  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 425px) {
+  .mv .text_area {
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+  }
+}
+.mv .catch {
+  padding-top: 0.5em;
+  font-size: min(5vw, 25px);
+  line-height: 1.5em;
+  margin: 0;
+}
+
+@media screen and (max-width: 816px) {
+  .mv h1 {
+    line-height: 1em;
+  }
+}
+/******************************
+contents
+******************************/
+.category {
+  width: 100%;
+}
+.category h2 {
+  font-size: min(5vw, 25px);
+}
+.category p {
+  line-height: 1.4em;
+  font-size: min(5vw, 20px);
+}
+.category__title {
+  font-size: min(7vw, 50px);
+  color: #814D00;
+  text-align: center;
+  position: relative;
+}
+.category__title img {
+  width: min(2em, 100px);
+  padding: 0 0.5em;
+}
+.category__waku {
+  max-width: 1000px;
+  padding: 4vh;
+  margin-top: 1vh;
+  line-height: 4vh;
+  text-align: center;
+  border-top: solid 5px #814D00;
+  border-bottom: solid 5px #814D00;
+  border-image: linear-gradient(90deg, #814D00 0%, #FBBF66 50%, #814D00 100%) 1;
+  background-color: #E4D9CF;
+}
+
+.category_m {
+  width: 80%;
+  margin: auto;
+  font-size: min(5vw, 20px);
+}
+.category_m__title_about {
+  font-size: min(7vw, 35px);
+}
+.category_m__waku {
+  max-width: 100%;
+  margin-top: 1vh;
+  line-height: 3vh;
+}
+.category_m ul {
+  padding-left: 2em;
+  list-style: square;
+}
+.category_m ul li {
+  padding-bottom: 1em;
+}
+
+.shop {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  word-break: keep-all;
+  line-height: 1em;
+}
+.shop .image_3d {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  column-gap: 1vw;
+}
+.shop .image_3d img {
+  border: solid 1px #FBBF66;
+}
+
+.caption_1 {
+  font-size: min(3vw, 14px);
+}
+
+.map_waku {
+  max-width: 1000px;
+  padding: 0 0 1px 0;
+  margin-top: 1vh;
+  text-align: center;
+  border: solid 1px #814D00;
+  border-image: linear-gradient(150deg, #814D00 10%, #FBBF66 50%, #814D00 60%, #FBBF66 90%) 1;
+  background-color: #E4D9CF;
+}
+
+/*****************************
+* A Modern CSS Reset (https://github.com/hankchizljaw/modern-css-reset)
+* 上記に、ul要素,ol要素,a要素への記述追加
+*****************************/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+li {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  background-color: initial;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/******************************
+footer
+******************************/
+footer {
+  font-family: "Murecho", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  background-color: #e7e9ed;
+  padding: 5vh 0 10vh;
+  box-shadow: 0 -5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+/******************************
+hamburger.scss
+******************************/
+.c-header {
+  align-items: center;
+  background-color: #eeeeee; /* カスタマイズしてください */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem; /* カスタマイズしてください */
+  width: 100%;
+  font-size: min(2.5vw, 18px);
+}
+
+.c-header__logo {
+  color: #000; /* カスタマイズしてください */
+  min-width: 80px; /* カスタマイズしてください */
+  text-decoration: none;
+  padding: 1.5vh 2vw 0;
+}
+
+.c-header__list {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 0.2vh;
+}
+
+.c-header__list-item {
+  list-style: none;
+  text-decoration: none;
+}
+
+.c-header__list-link {
+  color: #000; /* カスタマイズしてください */
+  display: block;
+  margin-right: 20px; /* カスタマイズしてください */
+  text-decoration: none;
+  padding: 10px 0px; /* カスタマイズしてください */
+}
+
+.c-header__list-link:hover {
+  filter: opacity(0.6); /* カスタマイズしてください */
+}
+
+.c-hamburger-menu {
+  position: relative;
+}
+
+@media screen and (max-width: 750px) {
+  .c-hamburger-menu__list {
+    background-color: #eeeeee; /* カスタマイズしてください */
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    padding: 2rem; /* カスタマイズしてください */
+    position: absolute;
+    transform: translateX(100%);
+    transition: 0.3s; /* カスタマイズしてください */
+    top: 100%;
+    width: 100%;
+  }
+  #hamburger:checked ~ .c-hamburger-menu__list {
+    transform: translateX(0%);
+    transition: 0.3s;
+  }
+}
+.c-hamburger-menu__input {
+  display: none;
+}
+
+.c-hamburger-menu__bg {
+  background-color: #000; /* カスタマイズしてください */
+  cursor: pointer;
+  display: none;
+  height: 100vh;
+  left: 0;
+  opacity: 0.4; /* カスタマイズしてください */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#hamburger:checked ~ .c-hamburger-menu__bg {
+  display: block;
+}
+
+.c-hamburger-menu__button {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .c-hamburger-menu__button {
+    align-items: center;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* カスタマイズしてください */
+    height: 32px; /* カスタマイズしてください */
+    justify-content: center;
+    width: 32px; /* カスタマイズしてください */
+  }
+}
+.c-hamburger-menu__button-mark {
+  background-color: #000; /* カスタマイズしてください */
+  display: block;
+  height: 1px; /* カスタマイズしてください */
+  transition: 0.3s; /* カスタマイズしてください */
+  width: 20px; /* カスタマイズしてください */
+}
+
+@media screen and (max-width: 750px) {
+  #hamburger:checked ~ .c-hamburger-menu__button .c-hamburger-menu__button-mark:nth-of-type(1) {
+    transform: translate(2px, 1px) rotate(45deg); /* カスタマイズしてください */
+    transform-origin: 0%; /* カスタマイズしてください */
+  }
+  #hamburger:checked ~ .c-hamburger-menu__button .c-hamburger-menu__button-mark:nth-of-type(2) {
+    opacity: 0;
+  }
+  #hamburger:checked ~ .c-hamburger-menu__button .c-hamburger-menu__button-mark:nth-of-type(3) {
+    transform: translate(2px, 3px) rotate(-45deg); /* カスタマイズしてください */
+    transform-origin: 0%; /* カスタマイズしてください */
+  }
+}/*# sourceMappingURL=style.css.map */
