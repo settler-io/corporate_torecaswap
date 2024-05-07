@@ -1,0 +1,23 @@
+/******************************
+footer
+******************************/
+@use "common" as *;
+
+footer{
+  @include murecho;
+  font-size: 12px;
+  font-weight:  600;
+  width: 100%;
+  text-align: center;
+  background-color: #e7e9ed;
+  padding: 5vh 0 10vh;
+  // box-shadow: 0 0 10px #7a5216;
+  box-shadow: 0 -5px 10px 0px rgba(0,0,0, 0.2);
+
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+}

@@ -1,0 +1,81 @@
+// ******************************
+// breakpoint
+// ******************************
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}
+
+
+$breakpoint: (
+  "small": "screen and (max-width: 425px)",
+  "medium": "screen and (max-width: 767px)",
+  "large": "screen and (max-width: 1023px)",
+) !default;
+
+
+
+
+
+
+// ******************************
+// font-family
+// ******************************
+@mixin kaisei-opti-regular {
+  font-family: "Kaisei Opti", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin kaisei_opti_medium {
+  font-family: "Kaisei Opti", serif;
+  font-weight: 500;
+}
+
+@mixin kaisei-opti-bold {
+  font-family: "Kaisei Opti", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin sans-serif($weight: 500) {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: $weight;
+}
+
+@mixin murecho {
+  font-family: "Murecho", sans-serif;
+}
+
+
+
+// @mixin serif($weight: 500) {
+//   font-family: "Noto Serif JP", serif;
+//   font-weight: $weight;
+// }
+
+
+@mixin font50{
+  font-size: min(7vw,50px);
+}
+
+@mixin font35{
+  font-size: min(7vw,35px);
+}
+
+@mixin font25 {
+  font-size: min(5vw,25px);
+}
+
+@mixin font20 {
+  font-size: min(5vw,20px);
+}
+
+@mixin font18 {
+  font-size: min(2.5vw,18px);
+}
+
+@mixin caption_1 {
+  font-size: min(3vw,14px);
+}
